@@ -16,7 +16,7 @@ public class GradeApp {
     private JButton lecturersBtnHome;
     private JButton coursesBtnHome;
     private JButton aboutBtnHome;
-    private JButton accountBtnHome;
+    private JButton accountSignInBtnHome;
     private JButton gradesBtnHome;
     private JTextPane welcomeTextPane;
     private JPanel textBackground;
@@ -27,9 +27,15 @@ public class GradeApp {
     private JScrollPane QuizzesScrollPane;
     private JScrollPane HomeScrollPane;
     private JTextPane HomeHeading;
+    private JButton homeBtnQuiz;
+    private JButton quizzesBtnQuiz;
+    private JButton studentsBtnQuiz;
+    private JButton lecturersBtnQuiz;
+    private JButton coursesBtnQuiz;
+    private JButton aboutBtnQuiz;
+    private JButton accountSignInBtnQuiz;
+    private JButton gradesBtnQuiz;
     private JButton HomeBtn;
-
-
 
 
     public static void main(String[] args) {
@@ -43,7 +49,18 @@ public class GradeApp {
         frame.setVisible(true);
 
     }
+
     public GradeApp() {
+
+        boolean signIn = false;
+
+        if (signIn == true) {
+            accountSignInBtnHome.setText("Account");
+            accountSignInBtnQuiz.setText("Account");
+        } else if (signIn == false) {
+            accountSignInBtnHome.setText("Sign-in");
+            accountSignInBtnQuiz.setText("Sign-in");
+        }
 
         //Home Page styling
         //Sets Border for the main text background
@@ -58,22 +75,34 @@ public class GradeApp {
         lecturersBtnHome.setBorder(buttonBorder);
         coursesBtnHome.setBorder(buttonBorder);
         aboutBtnHome.setBorder(buttonBorder);
-        accountBtnHome.setBorder(buttonBorder);
+        accountSignInBtnHome.setBorder(buttonBorder);
         gradesBtnHome.setBorder(buttonBorder);
 
         //Quizzes Page styling
+        //Sets border for the main text background
+        textBackgroundQuizzes.setBorder(roundedBorder);
+
+        //Sets border for navigation bar buttons
+        homeBtnQuiz.setBorder(buttonBorder);
+        quizzesBtnQuiz.setBorder(buttonBorder);
+        studentsBtnQuiz.setBorder(buttonBorder);
+        lecturersBtnQuiz.setBorder(buttonBorder);
+        coursesBtnQuiz.setBorder(buttonBorder);
+        aboutBtnQuiz.setBorder(buttonBorder);
+        accountSignInBtnQuiz.setBorder(buttonBorder);
+        gradesBtnQuiz.setBorder(buttonBorder);
 
 
 
         homeBtnHome.addActionListener(new ActionListener() {
             @Override
-            public void actionPerformed(ActionEvent e){
+            public void actionPerformed(ActionEvent e) {
                 Background.removeAll();
                 Background.add(HomeScrollPane);
                 Background.repaint();
                 Background.revalidate();
 
-        }
+            }
         });
         quizzesBtnHome.addActionListener(new ActionListener() {
             @Override
@@ -89,6 +118,15 @@ public class GradeApp {
             public void actionPerformed(ActionEvent e) {
                 Background.removeAll();
                 Background.add(StudentsScrollPane);
+                Background.repaint();
+                Background.revalidate();
+            }
+        });
+        homeBtnQuiz.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Background.removeAll();
+                Background.add(HomeScrollPane);
                 Background.repaint();
                 Background.revalidate();
             }
