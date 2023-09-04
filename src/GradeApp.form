@@ -439,10 +439,10 @@
                   <font size="45" style="1"/>
                   <foreground color="-1"/>
                   <preferredSize width="980" height="150"/>
-                  <text value="&#9;&#9;&#9;&#9;College Preparation&#10;&#9;&#9;&#9;&#9;&#9;    Students"/>
+                  <text value="&#9;&#9;&#9;&#9;College Preparation&#10;&#9;&#9;&#9;&#9;&#9; Students"/>
                 </properties>
               </component>
-              <grid id="f33c0" binding="nav" layout-manager="GridBagLayout">
+              <grid id="f33c0" binding="navBarStudents" layout-manager="GridBagLayout">
                 <constraints>
                   <grid row="1" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                   <gridbag top="0" left="0" bottom="10" right="0" weightx="0.0" weighty="0.0"/>
@@ -453,7 +453,7 @@
                 </properties>
                 <border type="none"/>
                 <children>
-                  <component id="6a411" class="javax.swing.JButton">
+                  <component id="6a411" class="javax.swing.JButton" binding="homeBtnStudents">
                     <constraints>
                       <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                       <gridbag weightx="0.0" weighty="0.0"/>
@@ -472,7 +472,7 @@
                       <html.disable class="java.lang.Boolean" value="false"/>
                     </clientProperties>
                   </component>
-                  <component id="35501" class="javax.swing.JButton">
+                  <component id="35501" class="javax.swing.JButton" binding="quizzesBtnStudents">
                     <constraints>
                       <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                       <gridbag weightx="0.0" weighty="0.0"/>
@@ -486,7 +486,7 @@
                       <text value="Quizzes"/>
                     </properties>
                   </component>
-                  <component id="663f9" class="javax.swing.JButton">
+                  <component id="663f9" class="javax.swing.JButton" binding="studentsBtnStudents">
                     <constraints>
                       <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                       <gridbag weightx="0.0" weighty="0.0"/>
@@ -500,7 +500,7 @@
                       <text value="Students"/>
                     </properties>
                   </component>
-                  <component id="8546c" class="javax.swing.JButton">
+                  <component id="8546c" class="javax.swing.JButton" binding="lecturersBtnStudents">
                     <constraints>
                       <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                       <gridbag weightx="0.0" weighty="0.0"/>
@@ -514,7 +514,7 @@
                       <text value="Lecturers"/>
                     </properties>
                   </component>
-                  <component id="523bc" class="javax.swing.JButton">
+                  <component id="523bc" class="javax.swing.JButton" binding="coursesBtnStudents">
                     <constraints>
                       <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                       <gridbag weightx="0.0" weighty="0.0"/>
@@ -529,7 +529,7 @@
                       <text value="Courses"/>
                     </properties>
                   </component>
-                  <component id="e2dee" class="javax.swing.JButton">
+                  <component id="e2dee" class="javax.swing.JButton" binding="aboutBtnStudents">
                     <constraints>
                       <grid row="0" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                       <gridbag weightx="0.0" weighty="0.0"/>
@@ -543,7 +543,7 @@
                       <text value="About"/>
                     </properties>
                   </component>
-                  <component id="f7844" class="javax.swing.JButton">
+                  <component id="f7844" class="javax.swing.JButton" binding="accountSignInBtnStudents">
                     <constraints>
                       <grid row="0" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                       <gridbag weightx="0.0" weighty="0.0"/>
@@ -557,7 +557,7 @@
                       <text value="Account"/>
                     </properties>
                   </component>
-                  <component id="fd74b" class="javax.swing.JButton">
+                  <component id="fd74b" class="javax.swing.JButton" binding="gradesBtnStudents">
                     <constraints>
                       <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                       <gridbag weightx="0.0" weighty="0.0"/>
@@ -573,7 +573,7 @@
                   </component>
                 </children>
               </grid>
-              <grid id="27efa" layout-manager="GridBagLayout">
+              <grid id="27efa" binding="textBackgroundStudents" layout-manager="GridBagLayout">
                 <constraints>
                   <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
                   <gridbag top="0" left="0" bottom="450" right="0" weightx="0.0" weighty="0.0"/>

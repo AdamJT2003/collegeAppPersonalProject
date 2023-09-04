@@ -37,7 +37,16 @@ public class GradeApp {
     private JButton gradesBtnQuiz;
     private JScrollPane StudentScrollPane;
     private JPanel Students;
-    private JPanel nav;
+    private JPanel navBarStudents;
+    private JPanel textBackgroundStudents;
+    private JButton homeBtnStudents;
+    private JButton quizzesBtnStudents;
+    private JButton studentsBtnStudents;
+    private JButton lecturersBtnStudents;
+    private JButton coursesBtnStudents;
+    private JButton aboutBtnStudents;
+    private JButton accountSignInBtnStudents;
+    private JButton gradesBtnStudents;
     private JButton HomeBtn;
 
 
@@ -94,6 +103,20 @@ public class GradeApp {
         aboutBtnQuiz.setBorder(buttonBorder);
         accountSignInBtnQuiz.setBorder(buttonBorder);
         gradesBtnQuiz.setBorder(buttonBorder);
+
+        //Students Page styling
+        //Sets border for the main text background
+        textBackgroundStudents.setBorder(roundedBorder);
+
+        //Sets border for navigation bar buttons
+        homeBtnStudents.setBorder(buttonBorder);
+        quizzesBtnStudents.setBorder(buttonBorder);
+        studentsBtnStudents.setBorder(buttonBorder);
+        lecturersBtnStudents.setBorder(buttonBorder);
+        coursesBtnStudents.setBorder(buttonBorder);
+        aboutBtnStudents.setBorder(buttonBorder);
+        accountSignInBtnStudents.setBorder(buttonBorder);
+        gradesBtnStudents.setBorder(buttonBorder);
 
 
 
