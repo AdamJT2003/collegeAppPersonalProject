@@ -35,6 +35,9 @@ public class GradeApp {
     private JButton aboutBtnQuiz;
     private JButton accountSignInBtnQuiz;
     private JButton gradesBtnQuiz;
+    private JScrollPane StudentScrollPane;
+    private JPanel Students;
+    private JPanel nav;
     private JButton HomeBtn;
 
 
@@ -117,7 +120,7 @@ public class GradeApp {
             @Override
             public void actionPerformed(ActionEvent e) {
                 Background.removeAll();
-                Background.add(StudentsScrollPane);
+                Background.add(StudentScrollPane);
                 Background.repaint();
                 Background.revalidate();
             }

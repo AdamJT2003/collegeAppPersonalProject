@@ -407,6 +407,204 @@
           </grid>
         </children>
       </scrollpane>
+      <scrollpane id="ee6fa" binding="StudentScrollPane">
+        <constraints>
+          <card name="Card3"/>
+        </constraints>
+        <properties>
+          <background color="-16777216"/>
+          <preferredSize width="980" height="800"/>
+          <wheelScrollingEnabled value="true"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="371db" binding="Students" layout-manager="GridBagLayout">
+            <constraints/>
+            <properties>
+              <background color="-16777216"/>
+              <preferredSize width="980" height="800"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="2d837" class="javax.swing.JTextPane" default-binding="true">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="6" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="50"/>
+                  </grid>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <background color="-16052671"/>
+                  <editable value="false"/>
+                  <font size="45" style="1"/>
+                  <foreground color="-1"/>
+                  <preferredSize width="980" height="150"/>
+                  <text value="&#9;&#9;&#9;&#9;College Preparation&#10;&#9;&#9;&#9;&#9;&#9;    Students"/>
+                </properties>
+              </component>
+              <grid id="f33c0" binding="nav" layout-manager="GridBagLayout">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <gridbag top="0" left="0" bottom="10" right="0" weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <background color="-5755603"/>
+                  <preferredSize width="980" height="40"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="6a411" class="javax.swing.JButton">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="0.0" weighty="0.0"/>
+                    </constraints>
+                    <properties>
+                      <actionCommand value="Button"/>
+                      <background color="-5755603"/>
+                      <borderPainted value="true"/>
+                      <foreground color="-1"/>
+                      <label value="Home"/>
+                      <name value=""/>
+                      <preferredSize width="110" height="30"/>
+                      <text value="Home"/>
+                    </properties>
+                    <clientProperties>
+                      <html.disable class="java.lang.Boolean" value="false"/>
+                    </clientProperties>
+                  </component>
+                  <component id="35501" class="javax.swing.JButton">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="0.0" weighty="0.0"/>
+                    </constraints>
+                    <properties>
+                      <background color="-5755603"/>
+                      <borderPainted value="true"/>
+                      <foreground color="-1"/>
+                      <label value="Quizzes"/>
+                      <preferredSize width="110" height="30"/>
+                      <text value="Quizzes"/>
+                    </properties>
+                  </component>
+                  <component id="663f9" class="javax.swing.JButton">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="0.0" weighty="0.0"/>
+                    </constraints>
+                    <properties>
+                      <background color="-5755603"/>
+                      <borderPainted value="true"/>
+                      <foreground color="-1"/>
+                      <label value="Students"/>
+                      <preferredSize width="110" height="30"/>
+                      <text value="Students"/>
+                    </properties>
+                  </component>
+                  <component id="8546c" class="javax.swing.JButton">
+                    <constraints>
+                      <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="0.0" weighty="0.0"/>
+                    </constraints>
+                    <properties>
+                      <background color="-5755603"/>
+                      <borderPainted value="true"/>
+                      <foreground color="-1"/>
+                      <label value="Lecturers"/>
+                      <preferredSize width="110" height="30"/>
+                      <text value="Lecturers"/>
+                    </properties>
+                  </component>
+                  <component id="523bc" class="javax.swing.JButton">
+                    <constraints>
+                      <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="0.0" weighty="0.0"/>
+                    </constraints>
+                    <properties>
+                      <background color="-5755603"/>
+                      <borderPainted value="true"/>
+                      <contentAreaFilled value="true"/>
+                      <foreground color="-1"/>
+                      <label value="Courses"/>
+                      <preferredSize width="110" height="30"/>
+                      <text value="Courses"/>
+                    </properties>
+                  </component>
+                  <component id="e2dee" class="javax.swing.JButton">
+                    <constraints>
+                      <grid row="0" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="0.0" weighty="0.0"/>
+                    </constraints>
+                    <properties>
+                      <background color="-5755603"/>
+                      <borderPainted value="true"/>
+                      <foreground color="-1"/>
+                      <label value="About"/>
+                      <preferredSize width="110" height="30"/>
+                      <text value="About"/>
+                    </properties>
+                  </component>
+                  <component id="f7844" class="javax.swing.JButton">
+                    <constraints>
+                      <grid row="0" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="0.0" weighty="0.0"/>
+                    </constraints>
+                    <properties>
+                      <actionCommand value="Button"/>
+                      <background color="-5755603"/>
+                      <borderPainted value="true"/>
+                      <foreground color="-1"/>
+                      <preferredSize width="110" height="30"/>
+                      <text value="Account"/>
+                    </properties>
+                  </component>
+                  <component id="fd74b" class="javax.swing.JButton">
+                    <constraints>
+                      <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="0.0" weighty="0.0"/>
+                    </constraints>
+                    <properties>
+                      <background color="-5755603"/>
+                      <borderPainted value="true"/>
+                      <foreground color="-1"/>
+                      <label value="Grades"/>
+                      <preferredSize width="110" height="30"/>
+                      <text value="Grades"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="27efa" layout-manager="GridBagLayout">
+                <constraints>
+                  <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <gridbag top="0" left="0" bottom="450" right="0" weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <background color="-16777216"/>
+                  <preferredSize width="782" height="150"/>
+                </properties>
+                <border type="empty"/>
+                <children>
+                  <component id="5bc76" class="javax.swing.JTextPane">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="50"/>
+                      </grid>
+                      <gridbag weightx="0.0" weighty="0.0"/>
+                    </constraints>
+                    <properties>
+                      <background color="-12302262"/>
+                      <font size="16"/>
+                      <foreground color="-1"/>
+                      <preferredSize width="762" height="130"/>
+                      <text value="Welcome to this college preparation app where you can enter your grades and see which courses you are eligible to apply for or if you are eligible to progress to the next year.  This app also allows the user to access a variety of quizzes to help with revision, revision material for the course you are studying and the ability to note down your own grades as you receive them, providing you with extra help when preparing for or undergoing your studies."/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+        </children>
+      </scrollpane>
     </children>
   </grid>
 </form>
