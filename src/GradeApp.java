@@ -341,5 +341,65 @@ public class GradeApp {
             }
         });
 
+        startQuizButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (quizComboBoxQuizzes.getSelectedItem() == "Internet of Things (IoT)"){
+                    //Creates a new instance of the IoTQuiz class and assigns it to the variable prog
+                    IoTQuiz prog = new IoTQuiz();
+
+                    //Calls the method called IoTQuizQ1 within the IoTQuiz class
+                    prog.IoTQuizQ1();
+                }else if (quizComboBoxQuizzes.getSelectedItem() == "Digital Skills: Software Development") {
+                    //Creates a new instance of the DigSkillsSoftDevQuiz class and assigns it to the variable prog
+                    DigSkillsSoftDevQuiz prog = new DigSkillsSoftDevQuiz();
+
+                    //Calls the method called DigSkillsSoftDevQuizQ1 within the DigSkillsSoftDevQuiz class
+                    prog.DigSkillsSoftDevQuizQ1();
+                }else if (quizComboBoxQuizzes.getSelectedItem() == "Digital Skills: Computer Science"){
+                    //Creates a new instance of the DigSkillsCompSciQuiz class and assigns it to the variable prog
+                    DigSkillsCompSciQuiz prog = new DigSkillsCompSciQuiz();
+
+                    //Calls the method called DigSkillsCompSciQ1 within the DigSkillsCompSciQuiz class
+                    prog.DigSkillsCompSciQ1();
+                }else if (quizComboBoxQuizzes.getSelectedItem() == "Digital Skills: Cybersecurity"){
+                    //Creates a new instance of the DigSkillsCyberSecQuiz class and assigns it to the variable prog
+                    DigSkillsCyberSecQuiz prog = new DigSkillsCyberSecQuiz();
+
+                    //Calls the method called DigSkillsCyberSecQuizQ1 within the DigSkillsCyberSecQuiz class
+                    prog.DigSkillsCyberSecQuizQ1();
+                }else if (quizComboBoxQuizzes.getSelectedItem() == "Digital Skills: Data Science"){
+                    //Creates a new instance of the DigSkillsDataSciQuiz class and assigns it to the variable prog
+                    DigSkillsDataSciQuiz prog = new DigSkillsDataSciQuiz();
+
+                    //Calls the method called DigSkillsDataSciQ1 within the DigSkillsDataSciQuiz class
+                    prog.DigSkillsDataSciQuizQ1();
+                }else if (quizComboBoxQuizzes.getSelectedItem() == "Network Infrastructure"){
+                    //Creates a new instance of the NetworkInfraQuiz class and assigns it to the variable prog
+                    NetworkInfraQuiz prog = new NetworkInfraQuiz();
+
+                    //Calls the method called NetworkInfraQuizQ1 within the NetworkInfraQuiz class
+                    prog.NetworkInfraQ1();
+                }else if (quizComboBoxQuizzes.getSelectedItem() == "Cloud Computing"){
+                    //Creates a new instance of the CloudComputingQuiz class and assigns it to the variable prog
+                    CloudComputingQuiz prog = new CloudComputingQuiz();
+
+                    //Calls the method called CloudComputingQuizQ1 within the CloudComputingQuiz class
+                    prog.CloudComputingQuizQ1();
+                }else if (quizComboBoxQuizzes.getSelectedItem() == "Computer Science"){
+                    //Creates a new instance of the ComputerScienceQuiz class and assigns it to the variable prog
+                    ComputerScienceQuiz prog = new ComputerScienceQuiz();
+
+                    //Calls the method called IoTQuizQ1 within the DigSkillsSoftDevQuiz class
+                    prog.ComputerScienceQuizQ1();
+                } else if (quizComboBoxQuizzes.getSelectedItem() == "Software Development") {
+                    //Creates a new instance of the SoftwareDevelopmentQuiz class and assigns it to the variable prog
+                    SoftwareDevelopmentQuiz prog = new SoftwareDevelopmentQuiz();
+
+                    //Calls the method called IoTQuizQ1 within the DigSkillsSoftDevQuiz class
+                    prog.SoftDevQuizQ1();
+                }
+            }
+        });
     }
 }
