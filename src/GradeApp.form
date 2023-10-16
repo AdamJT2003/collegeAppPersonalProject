@@ -230,7 +230,7 @@
             <children>
               <component id="5566" class="javax.swing.JTextPane" default-binding="true">
                 <constraints>
-                  <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="6" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                  <grid row="0" column="0" row-span="1" col-span="6" vsize-policy="6" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
                     <preferred-size width="150" height="50"/>
                   </grid>
                   <gridbag weightx="0.0" weighty="0.0"/>
@@ -246,7 +246,7 @@
               </component>
               <grid id="2b64b" binding="navBarQuizzes" layout-manager="GridBagLayout">
                 <constraints>
-                  <grid row="1" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <grid row="1" column="0" row-span="1" col-span="6" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                   <gridbag top="0" left="0" bottom="10" right="0" weightx="0.0" weighty="0.0"/>
                 </constraints>
                 <properties>
@@ -377,8 +377,8 @@
               </grid>
               <grid id="977f7" binding="textBackgroundQuizzes" layout-manager="GridBagLayout">
                 <constraints>
-                  <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
-                  <gridbag top="0" left="0" bottom="450" right="0" weightx="0.0" weighty="0.0"/>
+                  <grid row="2" column="5" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <gridbag top="0" left="0" bottom="10" right="0" weightx="0.0" weighty="0.0"/>
                 </constraints>
                 <properties>
                   <background color="-16777216"/>
@@ -398,11 +398,76 @@
                       <font size="16"/>
                       <foreground color="-1"/>
                       <preferredSize width="762" height="130"/>
-                      <text value="Welcome to this college preparation app where you can enter your grades and see which courses you are eligible to apply for or if you are eligible to progress to the next year.  This app also allows the user to access a variety of quizzes to help with revision, revision material for the course you are studying and the ability to note down your own grades as you receive them, providing you with extra help when preparing for or undergoing your studies."/>
+                      <text value="Take some of the available quizzes for your current subject in order to better revise your knowledge of the subject.&#10;&#10;How to play:&#10;Select the course you are taking, choose a quiz available from that course, click start and answer the multi-choice questions."/>
                     </properties>
                   </component>
                 </children>
               </grid>
+              <component id="5cf11" class="javax.swing.JComboBox" binding="courseComboBoxQuizzes">
+                <constraints>
+                  <grid row="4" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag top="0" left="100" bottom="10" right="0" weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <background color="-12302262"/>
+                  <foreground color="-1"/>
+                  <model>
+                    <item value=""/>
+                    <item value="NQ Computer Science"/>
+                    <item value="HNC NextGen Computing"/>
+                    <item value="HND Cyber-security "/>
+                    <item value="HND Software Development"/>
+                    <item value="HND Infrastructure and Cloud NextGen"/>
+                  </model>
+                  <preferredSize width="391" height="30"/>
+                </properties>
+              </component>
+              <component id="494a6" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="3" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag top="0" left="100" bottom="10" right="0" weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <background color="-12828863"/>
+                  <font size="16"/>
+                  <foreground color="-1"/>
+                  <text value="Select a course."/>
+                </properties>
+              </component>
+              <component id="6d805" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="5" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag top="0" left="100" bottom="10" right="0" weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <background color="-12828863"/>
+                  <font size="16"/>
+                  <foreground color="-1"/>
+                  <text value="Select a quiz"/>
+                </properties>
+              </component>
+              <component id="a2ea0" class="javax.swing.JComboBox" binding="quizComboBoxQuizzes">
+                <constraints>
+                  <grid row="6" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag top="0" left="100" bottom="10" right="0" weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <background color="-12302262"/>
+                  <foreground color="-1"/>
+                  <preferredSize width="391" height="30"/>
+                </properties>
+              </component>
+              <component id="9da20" class="javax.swing.JButton" binding="startQuizButton" default-binding="true">
+                <constraints>
+                  <grid row="7" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag top="0" left="100" bottom="266" right="0" weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <font size="16"/>
+                  <preferredSize width="391" height="30"/>
+                  <text value="Start Quiz"/>
+                </properties>
+              </component>
             </children>
           </grid>
         </children>

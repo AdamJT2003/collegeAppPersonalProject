@@ -47,6 +47,9 @@ public class GradeApp {
     private JButton aboutBtnStudents;
     private JButton accountSignInBtnStudents;
     private JButton gradesBtnStudents;
+    private JComboBox courseComboBoxQuizzes;
+    private JButton startQuizButton;
+    private JComboBox quizComboBoxQuizzes;
     private JButton HomeBtn;
 
 
@@ -118,8 +121,11 @@ public class GradeApp {
         accountSignInBtnStudents.setBorder(buttonBorder);
         gradesBtnStudents.setBorder(buttonBorder);
 
+        //Adds a blank space to the quiz combo box for empty selection
+        quizComboBoxQuizzes.addItem("");
 
 
+        //Home Page
         homeBtnHome.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -148,6 +154,40 @@ public class GradeApp {
                 Background.revalidate();
             }
         });
+        lecturersBtnHome.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+        coursesBtnHome.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+        aboutBtnHome.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+        accountSignInBtnHome.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+        gradesBtnHome.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+
+
+
+        //Quizzes Page
         homeBtnQuiz.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -157,5 +197,149 @@ public class GradeApp {
                 Background.revalidate();
             }
         });
+        quizzesBtnQuiz.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Background.removeAll();
+                Background.add(QuizzesScrollPane);
+                Background.repaint();
+                Background.revalidate();
+            }
+        });
+        studentsBtnQuiz.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Background.removeAll();
+                Background.add(StudentScrollPane);
+                Background.repaint();
+                Background.revalidate();
+            }
+        });
+        lecturersBtnQuiz.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+        coursesBtnQuiz.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+        aboutBtnQuiz.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+        accountSignInBtnQuiz.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+        gradesBtnQuiz.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+        courseComboBoxQuizzes.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+
+                //Provides the option of quizzes available dependent on the course
+                if (courseComboBoxQuizzes.getSelectedItem() == "HNC NextGen Computing"){
+                    quizComboBoxQuizzes.addItem("Digital Skills: Software Development");
+                    quizComboBoxQuizzes.addItem("Digital Skills: Computer Science");
+                    quizComboBoxQuizzes.addItem("Digital Skills: Data Science");
+                    quizComboBoxQuizzes.addItem("Digital Skills: Cybersecurity");
+                    quizComboBoxQuizzes.addItem("Internet of Things (IoT)");
+                    quizComboBoxQuizzes.addItem("Computer Science");
+                    quizComboBoxQuizzes.addItem("Network Infrastructure");
+                    quizComboBoxQuizzes.addItem("Software Development");
+                    quizComboBoxQuizzes.addItem("Cloud Computing");
+                    quizComboBoxQuizzes.addItem("Cybersecurity");
+                    quizComboBoxQuizzes.addItem("Web Development");
+                }
+                if (courseComboBoxQuizzes.getSelectedItem() != "HNC NextGen Computing"){
+                    quizComboBoxQuizzes.removeItem("Digital Skills: Software Development");
+                    quizComboBoxQuizzes.removeItem("Digital Skills: Computer Science");
+                    quizComboBoxQuizzes.removeItem("Digital Skills: Data Science");
+                    quizComboBoxQuizzes.removeItem("Digital Skills: Cybersecurity");
+                    quizComboBoxQuizzes.removeItem("Internet of Things (IoT)");
+                    quizComboBoxQuizzes.removeItem("Computer Science");
+                    quizComboBoxQuizzes.removeItem("Network Infrastructure");
+                    quizComboBoxQuizzes.removeItem("Software Development");
+                    quizComboBoxQuizzes.removeItem("Cloud Computing");
+                    quizComboBoxQuizzes.removeItem("Cybersecurity");
+                    quizComboBoxQuizzes.removeItem("Web Development");
+                }
+            }
+        });
+
+
+
+        //Students Page
+        homeBtnStudents.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Background.removeAll();
+                Background.add(HomeScrollPane);
+                Background.repaint();
+                Background.revalidate();
+            }
+        });
+        quizzesBtnStudents.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Background.removeAll();
+                Background.add(QuizzesScrollPane);
+                Background.repaint();
+                Background.revalidate();
+            }
+        });
+        studentsBtnStudents.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Background.removeAll();
+                Background.add(StudentScrollPane);
+                Background.repaint();
+                Background.revalidate();
+            }
+        });
+        lecturersBtnStudents.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+        coursesBtnStudents.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+        aboutBtnStudents.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+        accountSignInBtnStudents.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+        gradesBtnStudents.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+
     }
 }
