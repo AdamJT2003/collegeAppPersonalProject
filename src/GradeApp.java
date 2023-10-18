@@ -50,6 +50,8 @@ public class GradeApp {
     private JComboBox courseComboBoxQuizzes;
     private JButton startQuizButton;
     private JComboBox quizComboBoxQuizzes;
+    private JScrollPane completeQuizScrollPaneQuizzes;
+    private JTextPane completeQuizTextPaneQuizzes;
     private JButton HomeBtn;
 
 
@@ -110,6 +112,7 @@ public class GradeApp {
         //Students Page styling
         //Sets border for the main text background
         textBackgroundStudents.setBorder(roundedBorder);
+        completeQuizScrollPaneQuizzes.setBorder(roundedBorder);
 
         //Sets border for navigation bar buttons
         homeBtnStudents.setBorder(buttonBorder);
@@ -126,6 +129,8 @@ public class GradeApp {
 
 
         //Home Page
+
+        //Moves to home page
         homeBtnHome.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -136,6 +141,8 @@ public class GradeApp {
 
             }
         });
+
+        //Moves to quizzes page
         quizzesBtnHome.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -145,6 +152,8 @@ public class GradeApp {
                 Background.revalidate();
             }
         });
+
+        //Moves to students page
         studentsBtnHome.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -154,30 +163,40 @@ public class GradeApp {
                 Background.revalidate();
             }
         });
+
+        //Moves to lecturers page
         lecturersBtnHome.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
             }
         });
+
+        //Moves to courses page
         coursesBtnHome.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
             }
         });
+
+        //Moves to about page
         aboutBtnHome.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
             }
         });
+
+        //Moves to account/sign-in page
         accountSignInBtnHome.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
             }
         });
+
+        //Moves to grades page
         gradesBtnHome.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -188,6 +207,8 @@ public class GradeApp {
 
 
         //Quizzes Page
+
+        //Moves to home page
         homeBtnQuiz.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -197,6 +218,8 @@ public class GradeApp {
                 Background.revalidate();
             }
         });
+
+        //Moves to quizzes page
         quizzesBtnQuiz.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -206,6 +229,8 @@ public class GradeApp {
                 Background.revalidate();
             }
         });
+
+        //Moves to students page
         studentsBtnQuiz.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -215,36 +240,48 @@ public class GradeApp {
                 Background.revalidate();
             }
         });
+
+        //Moves to the lecturers page
         lecturersBtnQuiz.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
             }
         });
+
+        //Moves to courses page
         coursesBtnQuiz.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
             }
         });
+
+        //Moves to about page
         aboutBtnQuiz.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
             }
         });
+
+        //Moves to account/sign-in page
         accountSignInBtnQuiz.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
             }
         });
+
+        //Moves to grades page
         gradesBtnQuiz.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
             }
         });
+
+        //Shows the available quizzes based on course.
         courseComboBoxQuizzes.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -280,67 +317,7 @@ public class GradeApp {
             }
         });
 
-
-
-        //Students Page
-        homeBtnStudents.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                Background.removeAll();
-                Background.add(HomeScrollPane);
-                Background.repaint();
-                Background.revalidate();
-            }
-        });
-        quizzesBtnStudents.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                Background.removeAll();
-                Background.add(QuizzesScrollPane);
-                Background.repaint();
-                Background.revalidate();
-            }
-        });
-        studentsBtnStudents.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                Background.removeAll();
-                Background.add(StudentScrollPane);
-                Background.repaint();
-                Background.revalidate();
-            }
-        });
-        lecturersBtnStudents.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-
-            }
-        });
-        coursesBtnStudents.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-
-            }
-        });
-        aboutBtnStudents.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-
-            }
-        });
-        accountSignInBtnStudents.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-
-            }
-        });
-        gradesBtnStudents.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-
-            }
-        });
-
+        //Starts quiz
         startQuizButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -390,16 +367,96 @@ public class GradeApp {
                     //Creates a new instance of the ComputerScienceQuiz class and assigns it to the variable prog
                     ComputerScienceQuiz prog = new ComputerScienceQuiz();
 
-                    //Calls the method called IoTQuizQ1 within the DigSkillsSoftDevQuiz class
+                    //Calls the method called ComputerScienceQuizQ1 within the ComputerScienceQuiz class
                     prog.ComputerScienceQuizQ1();
                 } else if (quizComboBoxQuizzes.getSelectedItem() == "Software Development") {
                     //Creates a new instance of the SoftwareDevelopmentQuiz class and assigns it to the variable prog
                     SoftwareDevelopmentQuiz prog = new SoftwareDevelopmentQuiz();
 
-                    //Calls the method called IoTQuizQ1 within the DigSkillsSoftDevQuiz class
+                    //Calls the method called SoftDevQuizQ1 within the SoftwareDevelopmentQuiz class
                     prog.SoftDevQuizQ1();
                 }
             }
         });
+
+
+
+
+        //Students Page
+
+        //Moves to home page
+        homeBtnStudents.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Background.removeAll();
+                Background.add(HomeScrollPane);
+                Background.repaint();
+                Background.revalidate();
+            }
+        });
+
+        //Moves to quizzes page
+        quizzesBtnStudents.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Background.removeAll();
+                Background.add(QuizzesScrollPane);
+                Background.repaint();
+                Background.revalidate();
+            }
+        });
+
+        //Moves to students page
+        studentsBtnStudents.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Background.removeAll();
+                Background.add(StudentScrollPane);
+                Background.repaint();
+                Background.revalidate();
+            }
+        });
+
+        //Moves to lecturers page
+        lecturersBtnStudents.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+
+        //Moves to courses page
+        coursesBtnStudents.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+
+        //Moves to about page
+        aboutBtnStudents.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+
+        //Moves to account/sign-in page
+        accountSignInBtnStudents.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+
+        //Moves to grades page
+        gradesBtnStudents.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+
+
     }
 }
